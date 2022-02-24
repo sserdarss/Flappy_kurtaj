@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+}
+
+
+
+.game-container{
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    left: 60px;
+    background-image: url(./istanbul.jpeg);
+    
+}
+.sky{
+    background-color: #9AE554;
+     width: 500px;
+     height: 580px;
+     position: absolute;
+     background-image: url(./istanbul.png);
+     background-repeat: no-repeat;
+    background-position: -40px 205px;
+     
+}
+.ground{
+    background-color: #FDD183;
+    width: 500px;
+    height: 150px;
+    position: relative;
+    top: 580px;
+    z-index: +1;
+    background-image: url(./bottom-background.png);
+    animation: ground 5s linear infinite;
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: auto 100%;
+}
+@keyframes ground {
+
+    from {
+        background-position: 0 0;
+      }
+    /*use negative width if you want it to flow right to left else and positive for left to right*/
+      to {
+        background-position: -500px 0;
+      }
+
+}
+.bird{
+
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    background-image: url(./IMG_5387.PNG);
+    
+   
+}
+
+.obstacle{
+    background-image: url(obstackle.png);
+width: 60px;
+height: 300px;
+position: absolute;
+
+}
+
+.topObstacle{
+background-image: url(obstackle-up.png);
+transform:rotate(180deg);
+width: 60px;
+height: 300px;
+position: absolute;
+}
+
+.border-left{
+  width: 80px;
+  height: 790px;
+  position: absolute;
+  background-color: white;
+  z-index: +2;
+
+}
+
+.border-right{
+    width: 80px;
+  height: 790px;
+  position: absolute;
+  background-color: white;
+  z-index: +2;
+  left: 560px;
+}
+.border-top{
+    width: 660px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top: -40px;
+}
