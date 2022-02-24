@@ -14,15 +14,13 @@ body{
     height: 730px;
     position: absolute;
     left: 60px;
-    background-image: url(./istanbul.jpeg);
-    
 }
 .sky{
     background-color: #9AE554;
      width: 500px;
      height: 580px;
      position: absolute;
-     background-image: url(./istanbul.png);
+     background-image: url(images/istanbul.png);
      background-repeat: no-repeat;
     background-position: -40px 205px;
      
@@ -34,7 +32,7 @@ body{
     position: relative;
     top: 580px;
     z-index: +1;
-    background-image: url(./bottom-background.png);
+    background-image: url(images/bottom-background.png);
     animation: ground 5s linear infinite;
     background-repeat: repeat;
     background-position: 0 0;
@@ -56,13 +54,13 @@ body{
     width: 60px;
     height: 45px;
     position: absolute;
-    background-image: url(./IMG_5387.PNG);
+    background-image: url(images/IMG_5387.PNG);
     
    
 }
 
 .obstacle{
-    background-image: url(obstackle.png);
+    background-image: url(images/obstackle.png);
 width: 60px;
 height: 300px;
 position: absolute;
@@ -70,7 +68,7 @@ position: absolute;
 }
 
 .topObstacle{
-background-image: url(obstackle-up.png);
+background-image: url(images/obstackle-up.png);
 transform:rotate(180deg);
 width: 60px;
 height: 300px;
