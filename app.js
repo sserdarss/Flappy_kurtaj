@@ -1,3 +1,7 @@
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
    const bird = document.querySelector('.bird')
    const gameDisplay = document.querySelector('.game-container')
@@ -7,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
    let gravity = 2
    let isGameOver = false
    let gap = 430
+
+  
 
    function startGame() {
        birdBottom -= gravity
@@ -78,6 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
     isGameOver = true
     document.removeEventListener('click', control)
     ground.setAttribute("style"," animation:step-end")
+    document.getElementById("button1").style.visibility = "visible";
+    document.getElementById("bitti").style.visibility = "visible";
    }
-
+   
 })
+
+function restart(){
+    location.reload();
+}
+
+
