@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     clearInterval(gameTimerId)
     console.log('game over')
     isGameOver = true
-    document.removeEventListener('keyup', control)
+    document.removeEventListener('click', control)
     ground.setAttribute("style"," animation:step-end")
    }
 
